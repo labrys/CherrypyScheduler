@@ -1,4 +1,4 @@
-![Logo](https://raw.githubusercontent.com/sawyersteven/CherrypyScheduler/master/img/Logo_wide.png)
+![Logo](https://raw.githubusercontent.com/labrys/cherrypy-scheduler/master/img/Logo_wide.png)
 
 # CherrypyScheduler
 CherrypyScheduler creates a simple interface for creating repeating events on a [Cherrypy](https://github.com/cherrypy/cherrypy) webserver.
@@ -64,7 +64,7 @@ This tells the plugin to run `my_scheduled_task`. The start time is `0:00` (midn
 
 Open `localhost:8080` in your browser and you'll see the counter increase every 30 seconds.
 
-Many more methods are available for interacting with the scheduler and scheduled tasks. See the [wiki](https://github.com/sawyersteven/CherrypyScheduler/wiki) for more information.
+Many more methods are available for interacting with the scheduler and scheduled tasks. See the [wiki](https://github.com/labrys/cherrypy-scheduler/wiki) for more information.
 
 ### How it Works
 
@@ -74,7 +74,7 @@ Tasks are called using a threading.Timer, so the main loop of the Cherrypy serve
 
 A record is kept for each task indicating the time-stamp of the last time the task was executed. This prevents tasks from being skipped if their start time is set to the start time of the server but the server has reset before their next execution would have been called.
 
-Much more information is available in the [wiki](https://github.com/sawyersteven/CherrypyScheduler/wiki).
+Much more information is available in the [wiki](https://github.com/labrys/cherrypy-scheduler/wiki).
 
 
 ### Testing
